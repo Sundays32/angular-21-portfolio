@@ -1,0 +1,43 @@
+
+.nameText, li{
+    color: var(--primary-text);
+}
+
+.downloadCVBtn::ng-deep{
+    .mat-mdc-button-touch-target{
+        border: 2px solid var(--primary-color) !important;
+        border-radius: 15px;
+    }
+
+    .mdc-button__label{
+        color: var(--primary-text);
+        font-weight: bold;
+    }
+
+    mat-icon{
+        color: var(--accent-color);
+    }
+}
+
+.darkModeBtn, .closeMobileMenu{
+    color: var(--primary-text);
+}
+
+.mobileNavigator{
+    background-color: var(--section-background);
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    z-index: 2;
+    padding: 12px;
+
+    li{
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-left: 12px;
+        font-weight: bold;
+    }
+    
+}
