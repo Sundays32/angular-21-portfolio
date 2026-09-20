@@ -1,28 +1,4 @@
-<div class="headerSection flex justify-between pt-[5px]">
-  <div class="logo flex h-[50px] items-center p-[12px]">
-    <img src="assets/Logo.png" alt="SR" class="h-[70px]">
-    <h1 class="font-bold nameText text-[25px] pb-[5px]">Sandesh Rao</h1>
-  </div>
-  <div class="navigator content-center">
-    <ul class="flex gap-[10px]">
-      <li>Home</li>
-      <li>About</li>
-      <li>Experience</li>
-      <li>Education</li>
-      <li>Skills</li>
-      <li>Projects</li>
-    </ul>
-  </div>
-  <div class="portfolioActionBtns flex pr-[12px] items-center gap-[10px]">
-    <a href="#">
-      <mat-icon class="darkModeBtn">dark_mode</mat-icon>
-    </a>
-    <button matFab extended class="downloadCVBtn" (click)="downloadCV()">
-      <mat-icon>download</mat-icon>
-      Download CV
-    </button>
-  </div>
-</div>
+<app-header></app-header>
 <div class="portfolioPage">
-  <router-outlet></router-outlet>
+  <app-portfolio-page></app-portfolio-page>>
 </div>

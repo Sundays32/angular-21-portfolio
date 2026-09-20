@@ -1,0 +1,61 @@
+.heroSectionName {
+    font-weight: 900;
+    font-size: 50px;
+    display: flex;
+    gap: 10px;
+
+    .firstName {
+        color: var(--primary-text);
+    }
+
+    .lastName {
+        color: var(--accent-color);
+    }
+}
+
+.secondaryIntro {
+    color: var(--secondary-text);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.bannerSection {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.detailedIntro{
+    color: var(--secondary-text);
+}
+
+.imgBG1 {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+
+}
+
+.helloChip::ng-deep {
+    & .mat-mdc-chip-action::before {
+        background-color: var(--chip-background) !important;
+        border-radius: 15px;
+    }
+
+    & .mat-mdc-chip-avatar{
+        z-index: 3;
+    }
+
+    & .mat-mdc-chip-action-label{
+        color: var(--secondary-text) !important;
+        font-weight: bold;
+    }
+
+}
+
+.banner{
+    @media(max-width:850px){
+        flex-direction: column-reverse;
+    }
+}
