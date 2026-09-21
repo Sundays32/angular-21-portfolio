@@ -20,6 +20,12 @@
 
             @media(max-width:850px){
                 justify-content: space-between;
+
+                @media(max-width:500px){
+                    .skillsCards{
+                        width: 140px !important;
+                    }
+                }
             }
 
             .skillsCards{

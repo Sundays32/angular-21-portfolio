@@ -29,6 +29,12 @@
                 .educationDet{
                     margin-top: 20px;
                 }
+
+                @media(max-width:500px){
+                    .progName{
+                        text-align: center;
+                    }
+                }
             }
             .progName{
                 font-size: 30px;
