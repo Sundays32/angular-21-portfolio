@@ -30,12 +30,40 @@
     color: var(--secondary-text);
 }
 
-.imgBG1 {
-    background-color: white;
-    width: 250px;
-    height: 250px;
+.bannerImg{
+    position: relative;
+    // width: 350px;
 
+    @media(max-width:500px){
+        width: unset;
+    }
+
+    .DP{
+        width: 350px;
+    }
+    
+    .dpImgBG {
+        width: 350px;
+        border-radius: 20px;
+        position: absolute;
+        left: -10%;
+
+        &.imgBG1{
+            background-color: var(--purple-light);
+            transform: rotateZ(87deg)
+        }
+        &.imgBG2{
+            background-color: var(--chip-background);
+            transform: rotateZ(17deg)
+        }
+    }
+
+    .dpImg{
+        display: flex;
+        justify-content: center;
+    }
 }
+
 
 .helloChip::ng-deep {
     & .mat-mdc-chip-action::before {
@@ -55,7 +83,16 @@
 }
 
 .banner{
+    .bannerTxt{
+        width: 50%;
+        padding-top: 70px;
+    }
     @media(max-width:850px){
         flex-direction: column-reverse;
+
+        .bannerTxt{
+            width: unset;
+            padding-top: 0px;
+        }
     }
 }
