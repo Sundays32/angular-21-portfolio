@@ -33,6 +33,12 @@
                 .expIcon{
                     height: 100px;
                     margin-bottom: 10px;
+
+                    @media(max-width:500px){
+                        &.acc{
+                            padding: 0 10px;
+                        }
+                    }
                 }
                 .expName{
                     color: var(--background-color);
