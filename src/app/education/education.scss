@@ -1,0 +1,49 @@
+.educationSectionBody{
+
+    .educationSection{
+        padding-top: 40px;
+        .educationHeader{
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        .educationH1{
+            color: var(--primary-text);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .educationIcon{
+            background-color: var(--skills-card);
+            width: 450px;
+            height: 250px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .educationDetails{
+            margin-top: 40px;
+            @media(max-width:850px){
+                flex-wrap: wrap;
+                .educationDet{
+                    margin-top: 20px;
+                }
+            }
+            .progName{
+                font-size: 30px;
+                color: var(--primary-text);
+                font-weight: bold;
+            }
+            .courseName{
+                font-size: 20px;
+                color: var(--secondary-text);
+                font-weight: bold;
+            }
+            .duration{
+                color: var(--secondary-text);
+            }
+        }
+
+    }
+}

@@ -6,12 +6,11 @@
     @if(!mobileView){
         <div class="navigator content-center">
             <ul class="flex gap-[10px]">
-                <li>Home</li>
-                <li>About</li>
-                <li>Experience</li>
-                <li>Education</li>
-                <li>Skills</li>
-                <li>Projects</li>
+                <li (click)="scrollTo('homeSection')">Home</li>
+                <li (click)="scrollTo('aboutSection')">About</li>
+                <li (click)="scrollTo('technologySection')">Skills</li>
+                <li (click)="scrollTo('expSection')">Experience</li>
+                <li (click)="scrollTo('educationSection')">Education</li>
             </ul>
         </div>
         <div class="portfolioActionBtns flex pr-[12px] items-center gap-[10px]">
@@ -42,12 +41,11 @@
                                 </button>
                             </div>
                     <ul class="">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Experience</li>
-                        <li>Education</li>
-                        <li>Skills</li>
-                        <li>Projects</li>
+                        <li (click)="scrollTo('homeSection')">Home</li>
+                        <li (click)="scrollTo('aboutSection')">About</li>
+                        <li (click)="scrollTo('technologySection')">Skills</li>
+                        <li (click)="scrollTo('expSection')">Experience</li>
+                        <li (click)="scrollTo('educationSection')">Education</li>
                     </ul>
                 </div>
             </div>

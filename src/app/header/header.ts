@@ -35,4 +35,12 @@ export class Header implements OnInit{
   public openMobileMenu():void{
     this.openMobileMenuSidebar = !this.openMobileMenuSidebar;
   }
+
+  public scrollTo(elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if(this.openMobileMenuSidebar) this.openMobileMenuSidebar = !this.openMobileMenuSidebar
+    }
+  }
 }
