@@ -1,6 +1,16 @@
-
+.headerSection{
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color);
+    z-index: 5;
+}
 .nameText, li{
     color: var(--primary-text);
+}
+
+li{
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .downloadCVBtn::ng-deep{

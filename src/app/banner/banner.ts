@@ -18,4 +18,11 @@ export class Banner {
     // Opens Gmail compose page in a new browser tab
     window.open(url, '_blank');
   }
+
+  public scrollTo(elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

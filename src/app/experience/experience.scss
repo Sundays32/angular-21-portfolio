@@ -1,0 +1,46 @@
+.expSectionBody{
+
+    background-color: var(--section-background);
+    
+    .expSection{
+        padding-top: 40px;
+        .expHeader{
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        .expH1{
+            color: var(--primary-text);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .expCardsSection{
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-around;
+            gap: 25px;
+            flex-wrap: wrap;
+
+            .expCards{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--skills-card);
+                width: 450px;
+                height: 250px;
+                border-radius: 15px;
+                .expIcon{
+                    height: 100px;
+                    margin-bottom: 10px;
+                }
+                .expName{
+                    color: var(--background-color);
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+                
+            }
+        }
+    }
+}

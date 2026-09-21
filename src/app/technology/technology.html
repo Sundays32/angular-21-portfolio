@@ -1,0 +1,17 @@
+<div class="technologySectionBody flex justify-center pb-[50px]" #technologySection id="technologySection">
+    <div class="technologySection w-[80%]">
+        <div class="techSection">
+            <h2 class="technologyHeader">MY SKILLS</h2>
+            <h1 class="technologyH1">Tools and Technologies</h1>
+        </div>
+        <div class="skillsCardsSection">
+            @for(skill of skills; track skill.id){
+                <div class="skillsCards">
+                    <img [src]="skill.imgUrl" [alt]="skill.name" class="skillIcon">
+                    <p class="skillName">{{skill.name}}</p>
+                </div>
+            }
+        </div>
+        
+    </div>
+</div>

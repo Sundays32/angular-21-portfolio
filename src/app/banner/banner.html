@@ -1,4 +1,4 @@
-<div class="bannerSection flex justify-between">
+<div class="bannerSection flex justify-between" id="homeSection">
     <div class="banner flex w-[80%] justify-between">
         <div class="bannerTxt">
             <mat-chip class="helloChip"><img matChipAvatar src="assets/hand.png" alt="Wave">Hello, I'm</mat-chip>
@@ -14,8 +14,8 @@
                     code,great UI/UX and continuous learning
                 </p>
                 <div class="bannerActionBtn pt-[20px] flex gap-[10px]">
-                    <button matFab extended class="bannerProjectsBtn">
-                        View my Projects
+                    <button matFab extended class="bannerProjectsBtn" (click)="scrollTo('technologySection')">
+                        View my Skills
                         <mat-icon>arrow_right_alt</mat-icon>
                     </button>
                     <button matFab extended class="bannerContactsBtn" (click)="emailMe()">

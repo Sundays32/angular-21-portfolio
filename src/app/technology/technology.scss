@@ -1,0 +1,45 @@
+.technologySectionBody{
+
+    .technologySection{
+        padding-top: 40px;
+        .technologyHeader{
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        .technologyH1{
+            color: var(--primary-text);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .skillsCardsSection{
+            margin-top: 25px;
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+
+            @media(max-width:850px){
+                justify-content: space-between;
+            }
+
+            .skillsCards{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--skills-card);
+                width: 150px;
+                height: 150px;
+                border-radius: 15px;
+                .skillIcon{
+                    height: 100px;
+                }
+                .skillName{
+                    color: var(--background-color);
+                    font-weight: bold;
+                }
+                
+            }
+        }
+    }
+}
