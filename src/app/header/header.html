@@ -4,53 +4,54 @@
         <h1 class="font-bold nameText text-[25px] pb-[5px]">Sandesh Rao</h1>
     </div>
     @if(!mobileView){
-        <div class="navigator content-center">
-            <ul class="flex gap-[10px]">
-                <li (click)="scrollTo('homeSection')">Home</li>
-                <li (click)="scrollTo('aboutSection')">About</li>
-                <li (click)="scrollTo('technologySection')">Skills</li>
-                <li (click)="scrollTo('expSection')">Experience</li>
-                <li (click)="scrollTo('educationSection')">Education</li>
-            </ul>
-        </div>
-        <div class="portfolioActionBtns flex pr-[12px] items-center gap-[10px]">
-            <!-- <a href="#">
+    <div class="navigator content-center">
+        <ul class="flex gap-[10px]">
+            <li><a href="#homeSection">Home</a></li>
+            <li><a href="#aboutSection">About</a></li>
+            <li><a href="#technologySection">Skills</a></li>
+            <li><a href="#expSection">Experience</a></li>
+            <li><a href="#educationSection">Education</a></li>
+        </ul>
+    </div>
+    <div class="portfolioActionBtns flex pr-[12px] items-center gap-[10px]">
+        <!-- <a href="#">
                 <mat-icon class="darkModeBtn">dark_mode</mat-icon>
             </a> -->
-            <button matFab extended class="downloadCVBtn" (click)="downloadCV()">
-                <mat-icon>download</mat-icon>
-                Download CV
-            </button>
-        </div>
+        <button matFab extended class="downloadCVBtn" (click)="downloadCV()">
+            <mat-icon>download</mat-icon>
+            Download CV
+        </button>
+    </div>
     }
     @else{
-        <div class="menuBtn pr-[12px] pt-[12px]">
-            <a>
-                <mat-icon class="closeMobileMenu" (click)="openMobileMenu()">{{!openMobileMenuSidebar? 'menu' : 'close'}}</mat-icon>
-            </a>
-            @if(openMobileMenuSidebar){
-            <div class="mobileNavMenu">
-                <div class="mobileNavigator">
-                    <div class="portfolioActionBtns flex pr-[12px] items-center gap-[10px] justify-end">
-                                <!-- <a href="#">
+    <div class="menuBtn pr-[12px] pt-[12px]">
+        <a>
+            <mat-icon class="closeMobileMenu" (click)="openMobileMenu()"
+                aria-label="Toggle navigation menu">{{!openMobileMenuSidebar? 'menu' : 'close'}}</mat-icon>
+        </a>
+        @if(openMobileMenuSidebar){
+        <div class="mobileNavMenu">
+            <div class="mobileNavigator">
+                <div class="portfolioActionBtns flex pr-[12px] items-center gap-[10px] justify-end">
+                    <!-- <a href="#">
                                     <mat-icon class="darkModeBtn">dark_mode</mat-icon>
                                 </a> -->
-                                <button matFab extended class="downloadCVBtn" (click)="downloadCV()">
-                                    <mat-icon>download</mat-icon>
-                                    Download CV
-                                </button>
-                            </div>
-                    <ul class="">
-                        <li (click)="scrollTo('homeSection')">Home</li>
-                        <li (click)="scrollTo('aboutSection')">About</li>
-                        <li (click)="scrollTo('technologySection')">Skills</li>
-                        <li (click)="scrollTo('expSection')">Experience</li>
-                        <li (click)="scrollTo('educationSection')">Education</li>
-                    </ul>
+                    <button matFab extended class="downloadCVBtn" (click)="downloadCV()">
+                        <mat-icon>download</mat-icon>
+                        Download CV
+                    </button>
                 </div>
+                <ul class="">
+                    <li (click)="scrollTo('homeSection')">Home</li>
+                    <li (click)="scrollTo('aboutSection')">About</li>
+                    <li (click)="scrollTo('technologySection')">Skills</li>
+                    <li (click)="scrollTo('expSection')">Experience</li>
+                    <li (click)="scrollTo('educationSection')">Education</li>
+                </ul>
             </div>
-                            
-            }
         </div>
+
+        }
+    </div>
     }
 </div>
