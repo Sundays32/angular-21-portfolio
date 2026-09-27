@@ -71,5 +71,19 @@
                 
             }
         }
+
+        @media(max-width:850px){
+            flex-direction: column;
+            gap: 80px;
+
+            .aboutLHS, .aboutRHS{
+                width: unset !important;
+            }
+            .expData, .projectCount, .achievementCount{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
     }
 }

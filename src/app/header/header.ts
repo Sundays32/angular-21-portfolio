@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -8,20 +8,14 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './header.scss',
   templateUrl: './header.html',
 })
-export class Header implements OnInit{
+export class Header {
   public mobileView: boolean = window.innerWidth < 850;
   public openMobileMenuSidebar: boolean = false;
 
-  public ngOnInit(): void {
-
-  }
-
-  @HostListener('window:resize',['$event'])
-  toggleMobileView(event:Event):void{
+  @HostListener('window:resize')
+  updateMobileView():void{
     this.mobileView = window.innerWidth < 850
   }
-
-
 
   public downloadCV():void{
     const link = document.createElement('a');
