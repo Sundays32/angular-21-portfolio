@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Experiences } from '../core/models/experience.model';
+import { ExperienceService } from '../core/services/experiences.service';
 
 @Component({
   imports: [],
@@ -6,4 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './experience.scss',
   templateUrl: './experience.html',
 })
-export class Experience {}
+export class Experience {
+
+  public readonly experienceService = inject(ExperienceService);
+  public readonly experience: readonly Experiences[] = this.experienceService.getExperiencesList();
+}

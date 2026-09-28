@@ -5,19 +5,14 @@
             <h1 class="expH1">Experience</h1>
         </div>
         <div class="expCardsSection">
-            <div class="expCards">
-                <img src="assets/BixB.jpeg" alt="BixBytes" class="expIcon">
-                <h2 class="expName">BixBytes Solutions Pvt Ltd</h2>
-                <h3 class="expTitle">Software Engineer</h3>
-                <p class="expDuration">May 2025 - Present</p>
-            </div>
-
-            <div class="expCards">
-                <img src="assets/Accenture.svg" alt="Accenture" class="expIcon acc">
-                <h2 class="expName">Accenture</h2>
-                <h2 class="expTitle">Custom Software Engineering Analyst</h2>
-                <p class="expDuration">Nov 2022 - Apr 2025</p>
-            </div>
+            @for(exp of experience; track exp.id){
+                <div class="expCards">
+                    <img [src]="exp.imgUrl" [alt]="exp.company" class="expIcon">
+                    <h2 class="expName">{{exp.company}}</h2>
+                    <h3 class="expTitle">{{exp.role}}</h3>
+                    <p class="expDuration">{{exp.startDate}} - {{exp.endDate}}</p>
+                </div>
+            }
 
         </div>
         
