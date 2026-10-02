@@ -58,7 +58,7 @@ npm run build
 
 ## 🌐 Live Demo
 
-🔗 **[View My Portfolio](YOUR-GITHUB-PAGES-URL)**
+🔗 **[View My Portfolio](https://sundays32.github.io/angular-21-portfolio/)**
 
 > Replace `YOUR-GITHUB-PAGES-URL` with your deployed GitHub Pages URL.
 
