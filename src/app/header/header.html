@@ -3,7 +3,7 @@
         <img src="assets/Logo.png" alt="SR" class="h-[70px]">
         <h1 class="font-bold nameText text-[25px] pb-[5px]">Sandesh Rao</h1>
     </div>
-    @if(!mobileView){
+    @if(!mobileView()){
     <div class="navigator content-center">
         <ul class="flex gap-[10px]">
             <li><a href="#homeSection">Home</a></li>
@@ -14,9 +14,11 @@
         </ul>
     </div>
     <div class="portfolioActionBtns flex pr-[12px] items-center gap-[10px]">
-        <!-- <a href="#">
-                <mat-icon class="darkModeBtn">dark_mode</mat-icon>
-            </a> -->
+        <button type="button" tooltip="Theme select" class="themeSelectButton" (click)="toggleTheme()">
+            <mat-icon>
+                {{theme()=== 'dark'? 'light_mode': 'dark_mode'}}
+            </mat-icon>
+        </button>
         <button matFab extended class="downloadCVBtn" (click)="downloadCV()">
             <mat-icon>download</mat-icon>
             Download CV
@@ -27,15 +29,17 @@
     <div class="menuBtn pr-[12px] pt-[12px]">
         <a>
             <mat-icon class="closeMobileMenu" (click)="openMobileMenu()"
-                aria-label="Toggle navigation menu">{{!openMobileMenuSidebar? 'menu' : 'close'}}</mat-icon>
+                aria-label="Toggle navigation menu">{{!openMobileMenuSidebar()? 'menu' : 'close'}}</mat-icon>
         </a>
-        @if(openMobileMenuSidebar){
+        @if(openMobileMenuSidebar()){
         <div class="mobileNavMenu">
             <div class="mobileNavigator">
                 <div class="portfolioActionBtns flex pr-[12px] items-center gap-[10px] justify-end">
-                    <!-- <a href="#">
-                                    <mat-icon class="darkModeBtn">dark_mode</mat-icon>
-                                </a> -->
+                    <button type="button" tooltip="Theme select" class="themeSelectButton" (click)="toggleTheme()">
+                        <mat-icon>
+                            {{theme()=== 'dark'? 'light_mode': 'dark_mode'}}
+                        </mat-icon>
+                    </button>
                     <button matFab extended class="downloadCVBtn" (click)="downloadCV()">
                         <mat-icon>download</mat-icon>
                         Download CV

@@ -7,7 +7,30 @@
     --section-background: #182445;
     --hover-background: #285348;
     --chip-background: #282a5e;
+    --chip-text: #CBD5E1;
     --purple-light: #818CF8;
     --purple-dark: #4F46E5;
     --skills-card: #b9d0ff;
+    --skill-card-name: #0B1222; 
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --background-color: #F5F7FC;
+  --section-background: #FFFFFF;
+
+  --primary-text: #172033;
+  --secondary-text: #5C6880;
+
+  --border-color: #DCE3EF;
+
+  --primary-color: #2563EB;
+  --accent-color: #7C3AED;
+
+  --skill-card-background: #DCE8FF;
+  --skill-card-border: #B7CEFF;
+  --skill-card-name: #7C3AED;
+
+  --chip-text: #F5F7FC
 }
