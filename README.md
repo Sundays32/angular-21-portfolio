@@ -1,59 +1,78 @@
-# Angular21Portfolio
+# Angular 22 Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+A modern, responsive personal portfolio built with **Angular 22**, **TypeScript**, **Tailwind CSS v4**, and **Angular Material**.
 
-## Development server
+## ✨ Features
 
-To start a local development server, run:
+- 📱 Responsive design with mobile navigation
+- 🌓 Light and dark theme support with persistent preferences
+- 💼 Data-driven skills and experience sections
+- ⚡ Angular Signals for reactive UI state
+- 📄 Resume download functionality
+- 🚀 Automated deployment using GitHub Actions and GitHub Pages
 
-```bash
-ng serve
-```
+## 🛠️ Tech Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Framework:** Angular 22
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4, SCSS
+- **UI Components:** Angular Material
+- **State Management:** Angular Signals
+- **Testing:** Vitest
+- **Deployment:** GitHub Pages, GitHub Actions
 
-## Code scaffolding
+## 🚀 Getting Started
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### 1. Clone the repository
 
 ```bash
-ng build
+git clone https://github.com/YOUR-USERNAME/angular-22-portfolio.git
+cd angular-22-portfolio
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+### 2. Install dependencies
 
 ```bash
-ng test
+npm install
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### 3. Start the development server
 
 ```bash
-ng e2e
+npm start
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+The application will be available at `http://localhost:4200/`.
 
-## Additional Resources
+### 4. Run tests
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+npm test
+```
+
+### 5. Build for production
+
+```bash
+npm run build
+```
+
+## 🌐 Live Demo
+
+🔗 **[View My Portfolio](YOUR-GITHUB-PAGES-URL)**
+
+> Replace `YOUR-GITHUB-PAGES-URL` with your deployed GitHub Pages URL.
+
+## 📌 Project Goals
+
+This project is part of my ongoing practice with modern Angular development, focusing on:
+
+- Component-based architecture
+- Strongly typed and reusable data models
+- Reactive state management with Angular Signals
+- Theme management and responsive UI
+- Automated CI/CD with GitHub Actions
+- Deployment using GitHub Pages
+
+---
+
+⭐ If you find this project useful, feel free to star the repository!

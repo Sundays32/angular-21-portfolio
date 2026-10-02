@@ -3,6 +3,10 @@
     top: 0;
     background-color: var(--background-color);
     z-index: 5;
+
+    .themeSelectButton{
+        color: var(--primary-text);
+    }
 }
 .nameText, li{
     color: var(--primary-text);
